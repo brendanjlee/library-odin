@@ -5,17 +5,24 @@
     <title>Library App</title>
   </head>
   <body>
-    <div class='container'>
-      <h1>Library App</h1>
-    </div>
-    <div class='container'>
-      <form action="" class='book-form'>
-        <label for="book-title">Book Title</label>
-        <input type="text" id='book-title'><br>
-        <label for="author">Author Name</label>
-        <input type="text" id='author'><br>
-        <label for="num-page">Number of Pages</label>
-        <input type="number" id='num-page'>
+    <header class='header'>
+      <h1>Your Library</h1>
+    </header>
+    <main class='main'>
+      <!-- Place Gridbox here -->
+      <button class='button-new-book'>
+        Add New Book
+      </button>
+    </main>
+    <div class='popup-div'>
+      <form action="" class="popup-form">
+        <!-- Format with CSS -->
+        <h3 class="popup-title">Add a new book</h3>
+        <input type="text" id='title' placeholder="Book Title">
+        <input type="text" id='author' placeholder="Author">
+        <input type="number" id='numPage' placeholder="Pages">
+        <label for="read">Read?</label>
+        <input type="checkbox" id='read'>
       </form>
     </div>
   </body>
